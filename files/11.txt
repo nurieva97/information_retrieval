@@ -1,0 +1,123 @@
+Освой программирование играючи
+Сайт Александра Климова
+/* Моя кошка замечательно разбирается в программировании. Стоит мне объяснить проблему ей - и все становится ясно. */ John Robbins, Debugging Applications, Microsoft Press, 2000
+Статья проплачена кошками - всемирно известными производителями котят.
+Если статья вам понравилась, то можете поддержать проект.
+На панели Palette находятся компоненты пользовательского интерфейса: View, Layouts, ViewGroup.
+Виджет — это объект View, который служит интерфейсом для взаимодействия с пользователем. Если сказать предыдущую умную фразу простым языком, понятным даже коту, то виджеты — это обычные элементы управления: кнопочки, текстовые поля, флажки, переключатели, списки.
+В сети можно встретить разные способы наименования на русском - контрол, вьюха, представление и т.д. Мы с вами будем использовать термин компонент. А знаете почему? Берём крайние буквы слова, отсчитываем по три следующих символа и выкидываем их на свалку. Что остаётся? Ну вы поняли - к омпо нент. Красиво спрятались.
+Кстати, в последних версиях Android Studio в режиме Design появилась панель Component Tree, хотя раньше в Eclipse аналогичная вкладка называлась Outline. Видимо, разработчики из Гугла читали эту статью и внесли поправки.
+Стандартные элементы имеют привычные свойства: ширина, высота, цвет и т.п.
+Другие настройки могут сбить с толку других программистов, поэтому не изощряйтесь в остроумии.
+Выравнивание (gravity) - это ориентация в контейнере (alignment). Например, вы хотите выровнять текст надписи по правому краю, тогда свойство gravity будет иметь значение right. Набор значений для gravity достаточно ограничен: left, center, right, top, bottom, center_vertiсаl, сliр_horizontal и еще некоторые.
+Обратите внимание, что в Android есть два сходных атрибута выравнивания: android: gravity и android: layout_gravity. Разница заключается в том, что android: gravity - это настройка, используемая компонентом, а android: layout_gravity применяется контейнером. Например, можно установить для android: gravity значение center, чтобы текст в EditText был выровнен по центру. Аналогичным образом можно выровнять EditText по правому краю LinearLayout (который является контейнером), установив android: layout_gravity="right".
+У компонентов также есть атрибут android:tag, который можно использовать для хранения каких-то промежуточных данных. Также можно устанавливать теги программно. Напишем надуманный пример:
+Вы можете использовать не только положительные, но и отрицательные значения для атрибута layout_marginBottom или родственных ему. При этом можно наблюдать эффект, когда следующий компонент будет "наезжать" на ваш компонент.
+Те компоненты, к которым вы будете обращаться в коде, нужно обязательно присваивать идентификаторы. Кроме того, они помогут сохранить состояние при поворотах: текст в текстовых полях, статус переключателей и т.д.
+В Android 8.0 (API 26) у View появилась возможность присвоить компоненту подсказку, которая появляется при долгом нажатии или при прохождении курсора мыши (бывает и такое).
+Подсказку можно установить через XML-атрибут.
+Можно установить подсказку программно, а также получить текст.
+В версии 3.2 добавили ChipGroup, Chip, BottomAppBar.
+TextView
+Button
+ImageView
+RecyclerView
+<fragment>
+ScrollView
+Switch
+TextView
+EditText (Plain Text, Password, E-mail и т.д.)
+AutoCompleteTextView, MultiAutoCompleteTextView
+CheckedTextView
+TextInputLayout
+Button
+ImageButton
+CheckBox
+ChipGroup и Chip
+RadioGroup
+RadioButton
+ToggleButton
+Switch
+FloatingActionButton
+View
+ImageView
+WebView
+VideoView
+CalendarView
+ProgressBar, ProgressBar (Horizontal)
+SeekBar, SeakBar (Discrete)
+RatingBar
+SearchView
+TextureView
+SurfaceView
+Horizontal Divider
+Vertical Divider
+ConstraintLayout
+Guideline (horizontal)
+Guideline (vertical)
+LinearLayout (horizontal) и LinearLayout (vertical)
+FrameLayout
+TableLayout и TableRow
+Space
+Spinner
+RecyclerView
+ScrollView, HorizontalScrollView
+NestedScrollView
+ViewPager
+CardView
+Tabs
+AppBarLayout
+BottomAppBar
+NavigationView
+BottomNavigationView
+Toolbar
+TabLayout
+TabItem
+ViewStub
+<include>
+<fragment>
+NavHostFragment
+<view>
+requestFocus
+adView
+MapView
+GridLayout
+ListView
+TabHost
+RelativeLayout
+GridView
+v.3.01
+В предыдущей версии были и другие компоненты.
+QuickContactBadge
+О разметках
+ExpandableListView
+TimePicker
+DatePicker
+Chronometer
+TextClock
+ImageSwitcher
+AdapterViewFlipper
+StackView
+TextSwitcher
+ViewAnimator
+ViewFlipper
+ViewSwitcher
+NumberPicker
+CoordinatorLayout
+TextInputEditText (вручную)
+Помимо компонентов, которые есть на панели инструментов, существуют и другие компоненты, которые можно использовать в проектах, прописывая их вручную.
+DrawerLayout
+ZoomControls
+ListPopupWindow
+SwipeRefreshLayout
+GestureOverlayView
+Раньше на сайте были описания устаревших компонентов. Я решил их удалить, чтобы не мозолили глаза. В их число попали Gallery, AnalogClock, DigitalClock.
+Eclipse
+SlidingPanelLayout
+BlinkLayout (недокументированный)
+SlidingDrawer
+MediaController
+Получить размеры компонентов при запуске приложения (Закрытая зона/4-й курс)
+Собственный фон для элементов
+Программное добавление и удаление виджета
+Создаём собственное пространство имён (Закрытая зона/5-й курс)

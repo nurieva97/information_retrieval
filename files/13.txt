@@ -1,0 +1,64 @@
+Освой программирование играючи
+Сайт Александра Климова
+/* Моя кошка замечательно разбирается в программировании. Стоит мне объяснить проблему ей - и все становится ясно. */ John Robbins, Debugging Applications, Microsoft Press, 2000
+Статья проплачена кошками - всемирно известными производителями котят.
+Если статья вам понравилась, то можете поддержать проект.
+
+Данный раздел посвящен графике.
+Общее о графике
+Класс android.graphics.Color
+Класс android.graphics.Drawable
+Класс android.graphics.Canvas
+Canvas: Генератор котов
+Класс android.graphics.Path
+Path: Перемещение картинки вдоль произвольной кривой
+Класс android.graphics.Picture
+Класс android.graphics.Bitmap
+Класс BitmapFactory
+Класс ColorMatrix и фильтр ColorMatrixColorFilter
+Класс android.graphics.Matrix
+Invert - инвертируем изображение
+Grayscale - градации серого
+Rotate - вращение
+Channel Mixer - регулируем интенсивность цвета
+Filter - цветовые фильтры
+Гамма-коррекция
+Sepia - имитация старых фотографий
+Watermark - наносим водяной знак
+Color Depth - уменьшаем глубину цвета
+Contrast - контрастность изображения
+Brightness - изменяем яркость изображения
+Snow Effect - эффект снега
+Black Filter - чернильный порошок
+Noise - шумовой эффект
+Saturation - насыщенность
+Hue - цвет
+Shading Filter - затенение
+Highlight Image - подсветка
+Размытие по Гауссу, рельеф, гравировка и другие эффекты
+Склеиваем два изображения
+Передача Bitmap между активностями
+Рисуем дуги с эффектом анимации
+Рисуем многоугольники
+Примеры с градиентами
+Shader (Шейдеры)
+Фильтры для масок EmbossMaskFilter, BlurMaskFilter
+Цветовые фильтры PorterDuffColorFilter, LightingColorFilter, ColorMatrixColorFilter
+EXIF - извлекаем информацию из фотографий
+Управляем цветами
+Цветовая модель HSV
+Наложение маски при помощи PorterDuffXferMode
+Round Corner - закругляем углы (PorterDuffXferMode)
+Reflection - отражение на блестящей поверхности
+Выбираем цвет с помощью ColorPickerDialog
+Рисуем кота. Вид сзади
+Звёзды из котов - создаём собственный Drawable
+Рисуем кота. Вид сзади. Часть вторая
+Полярная система координат
+Palette (Палитра)
+VectorDrawable
+AnimatedVectorDrawable
+RoundedBitmapDrawable
+ImageDecoder и AnimatedImageDrawable
+Последовательность Фибоначчи
+Видео про эффект пикселизации. Исходник.
